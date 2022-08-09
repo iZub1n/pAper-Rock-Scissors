@@ -13,6 +13,8 @@
 		61D72C5728A17797003202FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D72C5528A17797003202FA /* Main.storyboard */; };
 		61D72C5928A1779A003202FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D72C5828A1779A003202FA /* Assets.xcassets */; };
 		61D72C5C28A1779A003202FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61D72C5A28A1779A003202FA /* LaunchScreen.storyboard */; };
+		61D72C6328A17A1C003202FA /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D72C6228A17A1C003202FA /* MainScene.swift */; };
+		61D72C6F28A19742003202FA /* handPoseImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 61D72C6E28A19742003202FA /* handPoseImageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		61D72C5628A17797003202FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61D72C5828A1779A003202FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61D72C5B28A1779A003202FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		61D72C6228A17A1C003202FA /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		61D72C6E28A19742003202FA /* handPoseImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = handPoseImageClassifier.mlmodel; path = Model/handPoseImageClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,18 @@
 				61D72C5528A17797003202FA /* Main.storyboard */,
 				61D72C5828A1779A003202FA /* Assets.xcassets */,
 				61D72C5A28A1779A003202FA /* LaunchScreen.storyboard */,
+				61D72C6228A17A1C003202FA /* MainScene.swift */,
+				61D72C6628A17B01003202FA /* CoreML */,
 			);
 			path = "pAper Rock Scissors";
+			sourceTree = "<group>";
+		};
+		61D72C6628A17B01003202FA /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				61D72C6E28A19742003202FA /* handPoseImageClassifier.mlmodel */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D72C6328A17A1C003202FA /* MainScene.swift in Sources */,
+				61D72C6F28A19742003202FA /* handPoseImageClassifier.mlmodel in Sources */,
 				61D72C5428A17797003202FA /* ViewController.swift in Sources */,
 				61D72C5028A17797003202FA /* AppDelegate.swift in Sources */,
 			);
